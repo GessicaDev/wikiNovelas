@@ -30,7 +30,7 @@
         <p>IFRN campus Santa Cruz</p>
         <p>Trabalho de Autoria Web</p>
         <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
-        <p>Nome do Aluno 1, Nome do Aluno 2, Nome do Aluno 3</p>
+        <p>José Rikelmy, Luis Miguel, Maria Géssica</p>
     </footer>
 </body>
 </html>
