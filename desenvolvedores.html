@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="assets/semfundo.png"/>
+    <link rel="stylesheet" href="estilo.css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Desenvolvedores</title>
+</head>
+<body>
+    <main>
+        
+        <div class="home-container">
+            <div class="header-container">
+                <div class="header">
+                    <h1 id="saudacao" style="display:inline; font-weight: bold; color: #ff33bb;">Desenvolvedores</h1>
+                    <div class="header-esquerda">
+                        <div class="pesquisa">
+                            <span class="material-icons-outlined lupa">search</span>
+                            <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
+                        </div>
+                        <div id="menu-icon" onclick="toggleMenu()" style="display:inline; float:right; cursor:pointer; color: #ff33bb; font-size: 24px;">&#9776;</div>
+                    </div>
+                </div>
+            </div>
+            <nav id="nav-menu" style="display:none;">
+                <ul>
+                    <li><a href="#" onclick="showSection('sobreNovelas')">Sobre Novelas</a></li>
+                    <li><a href="#" onclick="showSection('minhasInformacoes')">Minhas Informações</a></li>
+                    <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+                    <li><a href="#" onclick="goToCadastro()">Sair</a></li>
+                </ul>
+            </nav>
+
+            <p>Esta página foi criada como parte de um projeto para a disciplina de Autoria Web.</p>
+            <h3 class="integrantes-titulo">Integrantes do Grupo:</h3>
+            <div class="biografia">
+                <img src="assets/rikelmy.jpeg" alt="Rikelmy Félix">
+                <div>
+                    <h4 class="rikelmy">Rikelmy Félix</h4>
+                    <p>Estudante de informática e desbravador.</p>
+                </div>
+            </div>
+            <div class="biografia">
+                <img src="assets/luis.jpeg" alt="Luis Miguel">
+                <div>
+                    <h4 class="luis">Luis Miguel</h4>
+                    <p>Estudante de informática, sanfoneiro e apaixonado por música.</p>
+                    
+                </div>
+            </div>
+            <div class="biografia">
+                <img src="assets/gess.jpeg" alt="Maria Géssica">
+                <div>
+                    <h4 class="gessica">Maria Géssica</h4>
+                    <p>Estudante de informática e apaixonada por novelas mexicanas.</p>
+                </div>
+            </div>
+
+            <footer>
+                <p>IFRN campus Santa Cruz</p>
+                <p>Trabalho de Autoria Web</p>
+                <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+                <p>Rikelmy Félix, Luis Miguel, Maria Géssica</p>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    
+        function showSection(section) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (sec) {
+                sec.style.display = 'none';
+            });
+    
+            var selectedSection = document.getElementById(section);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+    
+        function goToCadastro() {
+            window.location.href = 'index.html';  
+        }
+    
+        function goToCadastro() {
+            window.location.href = 'sobreNovelas'; 
+        }
+    </script>
+    
+</body>
+</html>
