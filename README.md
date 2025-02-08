@@ -7,4 +7,5 @@ Apresentar informações sobre novelas mexicanas, das quais uma das desenvolvedo
 # Integrantes do Website:
 
 - Rikelmy Félix (https://github.com/rikfelix)
-- Maria Géssica (https://github.com/GessicaDev)
+- Luis Miguel (https://github.com/luisteixeirac)
+- Géssica Teixeira (https://github.com/GessicaDev)
